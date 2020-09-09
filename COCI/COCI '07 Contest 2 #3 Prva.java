@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 public class Prva {
-	static BufferedReader br;
+    static BufferedReader br;
     static PrintWriter out;
     static StringTokenizer st;
     static char arr[][];

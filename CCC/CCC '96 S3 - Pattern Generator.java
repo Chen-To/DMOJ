@@ -2,7 +2,7 @@
 import java.util.*;
 import java.io.*;
 public class PatternGenerator {
-static BufferedReader br;
+    static BufferedReader br;
     static PrintWriter out;
     static StringTokenizer st;
     static int length = 0;

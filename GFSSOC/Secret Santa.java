@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 public class SecretSanta{
-	static BufferedReader br;
+    static BufferedReader br;
     static PrintWriter out;
     static StringTokenizer st;
     static Map<Integer,Integer> m = new HashMap<Integer,Integer>();

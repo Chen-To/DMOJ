@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 public class KnightHop {
-static BufferedReader br;
+    static BufferedReader br;
     static PrintWriter out;
     static StringTokenizer st;
     static boolean visited[][] = new boolean[9][9];

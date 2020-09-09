@@ -1,0 +1,56 @@
+import java.io.*;
+import java.util.*;
+public class TheTriangle {
+
+	static BufferedReader br;
+    static PrintWriter out;
+    static StringTokenizer st;
+    static int tri[][];
+    public static void main(String[] args) throws IOException {
+        br = new BufferedReader(new InputStreamReader(System.in));
+        out = new PrintWriter(new OutputStreamWriter(System.out));	
+        int size = readInt();
+        tri = new int[size][size];
+        for (int i = 0; i < size; i++) {
+        	for (int k = 0; k <= i; k ++) {
+        		tri[i][k] = readInt();
+        	}
+        }
+        System.out.println(sum(0,0,0));
+    }
+    public static int sum(int x, int y, int total) {
+    	if (y == tri.length || x == tri.length)
+    		return total;	
+    	total += tri[y][x];
+    	int a = sum(x, y+1, total);
+    	int b = sum(x+1, y+1, total);
+    	return Math.max(a,b);
+    	//return Math.max(sum(x+1, y+1, total+=tri[y][x]), sum(x, y+1, total+=tri[y][x]));
+    }
+    static String next () throws IOException {
+        while (st == null || !st.hasMoreTokens())
+        st = new StringTokenizer(br.readLine().trim());
+        return st.nextToken();
+    }
+ 
+    static long readLong () throws IOException {
+        return Long.parseLong(next());
+    }
+ 
+    static int readInt () throws IOException {
+        return Integer.parseInt(next());
+    }
+ 
+    static double readDouble () throws IOException {
+        return Double.parseDouble(next());
+    }
+ 
+    static char readCharacter () throws IOException {
+        return next().charAt(0);
+    }
+ 
+    static String readLine () throws IOException {
+        return br.readLine().trim();
+    }
+
+}

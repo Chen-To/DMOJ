@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 public class IdentifyingPalindromes {
-	  static BufferedReader br;
+    static BufferedReader br;
     static PrintWriter out;
     static StringTokenizer st;
     public static void main(String[] args) throws IOException {

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 public class BattlePositions {
-	static BufferedReader br;
+    static BufferedReader br;
     static PrintWriter out;
     static StringTokenizer st;
  

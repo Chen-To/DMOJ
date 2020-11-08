@@ -31,7 +31,8 @@ public class PalindromicWithDP {
     	}
     	int total = 0;
     	for (int i = 1; i <= num/2; i ++) {
-    		dp[num-i*2] = evenRecurse(num-i*2, sum);
+    		if (dp[num] == 0 || num == 0) 
+    			dp[num-i*2] = evenRecurse(num-i*2, sum);
     		total += dp[num-i*2];
     	}
     	return total;
